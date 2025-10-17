@@ -5,23 +5,23 @@ products = {
     "P004": {"name": "USB Drive", "price": 500},
 }
 
-# === FUNCTIONS SECTION ===
+# === Calculations ===
 def compute_subtotal(cart):
-    """Compute subtotal from all items in the cart"""
+    #Compute subtotal from all items in the cart
     return sum(item["total"] for item in cart)
 
 def compute_discount(subtotal):
-    """Apply 10% discount if subtotal >= 20000"""
+    #Apply 10% discount if subtotal >= 20000
     if subtotal >= 20000:
         return subtotal * 0.10
     return 0
 
 def compute_tax(subtotal, discount):
-    """Compute 12% VAT after discount"""
+    #Compute 12% VAT after discount
     return (subtotal - discount) * 0.12
 
 def compute_total(subtotal, discount, tax):
-    """Compute final total"""
+    #Compute final total
     return subtotal - discount + tax
 
 
