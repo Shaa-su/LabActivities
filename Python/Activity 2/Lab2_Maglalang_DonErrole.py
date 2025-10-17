@@ -22,13 +22,13 @@ while True:
         code = input("Enter product code (or '0' to checkout): ").strip().upper()
         if code == "0":
             break
-
+                #pag mali nalagay
         if code not in products:
             raise KeyError("Invalid product code.")
-
+                
         quantity = int(input("Enter Quantity: "))
         if quantity <= 0:
-            raise ValueError("Quantity must be positive.")
+            raise ValueError("Quantity must be positive.")# to prevent negative number 
 
         product = products[code]
         total_price = product["price"] * quantity
@@ -63,7 +63,7 @@ else:
     tax = (subtotal - discount) * 0.12
     total = subtotal - discount + tax
 
-    # Print items 
+    # Print items the :<20 part para po mag align at for formatting part po
     for item in cart:
         print(f"{item['name']:<15} x{item['qty']:<3} ₱{item['total']:>8,}")
 
