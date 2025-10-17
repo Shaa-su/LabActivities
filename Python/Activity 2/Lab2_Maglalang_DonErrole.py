@@ -5,6 +5,27 @@ products = {
     "P004": {"name": "USB Drive", "price": 500},
 }
 
+# === FUNCTIONS SECTION ===
+def compute_subtotal(cart):
+    """Compute subtotal from all items in the cart"""
+    return sum(item["total"] for item in cart)
+
+def compute_discount(subtotal):
+    """Apply 10% discount if subtotal >= 20000"""
+    if subtotal >= 20000:
+        return subtotal * 0.10
+    return 0
+
+def compute_tax(subtotal, discount):
+    """Compute 12% VAT after discount"""
+    return (subtotal - discount) * 0.12
+
+def compute_total(subtotal, discount, tax):
+    """Compute final total"""
+    return subtotal - discount + tax
+
+
+# === MAIN PROGRAM ===
 print("=== Welcome to BulSU E-Commerce Store ===")
 print("")
 print("Available Products:")
@@ -22,13 +43,13 @@ while True:
         code = input("Enter product code (or '0' to checkout): ").strip().upper()
         if code == "0":
             break
-                #pag mali nalagay
+        # pag mali nalagay
         if code not in products:
             raise KeyError("Invalid product code.")
                 
         quantity = int(input("Enter Quantity: "))
         if quantity <= 0:
-            raise ValueError("Quantity must be positive.")# to prevent negative number 
+            raise ValueError("Quantity must be positive.")  # to prevent negative number 
 
         product = products[code]
         total_price = product["price"] * quantity
@@ -40,30 +61,24 @@ while True:
         })
         print(f" ✓ Added {quantity} x {product['name']} to cart.\n")
 
-    except KeyError as e:  #== For catching error ==
+    except KeyError as e:  # == For catching error ==
         print(f"X {e}\n")
     except ValueError as e:
         print(f"X {e}\n")
 
 # === CHECKOUT ===
 print("\n=== OFFICIAL RECEIPT ===")
-      #if nothing got purchased 
+# if nothing got purchased 
 if not cart:
     print("No items purchased.")
 else:
-    subtotal = sum(item["total"] for item in cart)
-    discount = 0
-    tax = 0
+    # Use the functions for computation
+    subtotal = compute_subtotal(cart)
+    discount = compute_discount(subtotal)
+    tax = compute_tax(subtotal, discount)
+    total = compute_total(subtotal, discount, tax)
 
-    # for applying discount
-    if subtotal >= 20000:
-        discount = subtotal * 0.10
-
-    # Apply 12% tax 
-    tax = (subtotal - discount) * 0.12
-    total = subtotal - discount + tax
-
-    # Print items the :<20 part para po mag align at for formatting part po
+    # Print items; the :<20 part is for alignment and formatting
     for item in cart:
         print(f"{item['name']:<15} x{item['qty']:<3} ₱{item['total']:>8,}")
 
