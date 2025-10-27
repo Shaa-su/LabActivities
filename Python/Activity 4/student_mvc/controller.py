@@ -1,16 +1,13 @@
-
-# The Controller connects the model and view.
-
 from student_mvc.model import Student
 import student_mvc.view as view
 
 class StudentController:
     def __init__(self):
-        self.students = []  # list to store student objects
+        self.students = []  
 
     def add_student(self):
         student_id, name, grade = view.get_student_details()
-        # check for duplicates
+        # pang chekc if may duplicate
         for s in self.students:
             if s.student_id == student_id:
                 view.show_message("Student ID already exists!")

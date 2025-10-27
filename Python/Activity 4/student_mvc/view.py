@@ -1,6 +1,6 @@
-# The View handles display and user interaction.
+# dito makikita ang display or ui ng activity 
 def show_menu():
-    print("\n===== Student Management System =====")
+    print("\n+++++ Student Management System +++++")
     print("1. Add Student")
     print("2. View All Students")
     print("3. Update Student Grade")
