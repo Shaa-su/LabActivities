@@ -1,5 +1,3 @@
-
-
 from text_analyzer.cleaner import clean_text #ginamit dito yung sa cleaner.py para walang caps using import
 
 def analyze_text(text):

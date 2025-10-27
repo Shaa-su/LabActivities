@@ -1,4 +1,3 @@
-
 # para pang lowercase
 
 def clean_text(text):
