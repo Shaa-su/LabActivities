@@ -4,7 +4,7 @@ def analyze_text(text):
     
     cleaned = clean_text(text)
 
-    # Split the text into words
+    
     words = cleaned.split()
 
     # pang bilang
