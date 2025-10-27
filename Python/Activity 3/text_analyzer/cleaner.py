@@ -1,5 +1,4 @@
 # para pang lowercase
-
 def clean_text(text):
     # pang lowercase
     text = text.lower()

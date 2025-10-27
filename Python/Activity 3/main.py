@@ -11,7 +11,7 @@ result = analyze_text(sentence)
 freq = word_frequency(sentence)
 
 # Display with borders
-border = "+" * 30  # Simple border using '+'
+border = "+" * 30  
 print(f"\n{border}")
 print("Analysis Results:")
 print(f"Total Words: {result['total_words']}")

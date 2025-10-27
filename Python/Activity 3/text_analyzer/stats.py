@@ -1,6 +1,5 @@
 #same dito ginamit yung sa cleaner.py para walang caps using import
-from text_analyzer.cleaner import clean_text #ginamit dito yung sa cleaner.py para walang caps using import
-
+from text_analyzer.cleaner import clean_text 
 def word_frequency(text):
     cleaned = clean_text(text)
     words = cleaned.split()
