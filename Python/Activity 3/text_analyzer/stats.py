@@ -1,0 +1,13 @@
+
+
+from text_analyzer.cleaner import clean_text #ginamit dito yung sa cleaner.py para walang caps using import
+
+def word_frequency(text):
+    cleaned = clean_text(text)
+    words = cleaned.split()
+    
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+
+    return freq
