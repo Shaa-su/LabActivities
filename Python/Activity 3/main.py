@@ -19,8 +19,8 @@ print(f"Unique Words: {result['unique_words']}")
 print(f"Longest Word: {result['longest_word']}")
 print(f"{border}")
 
-print("\nWord Frequency:")
 print(f"{border}")
+print("\nWord Frequency:")
 for word, count in freq.items():
     print(f"{word}: {count}")
 print(f"{border}")
