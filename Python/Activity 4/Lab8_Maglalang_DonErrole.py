@@ -46,7 +46,7 @@ def show_students(students):
 def show_message(message):
     print(message)
 
-#+++++CONTROLLER+++++
+#+++++CONTROLLER++++++
 class StudentController:
     def __init__(self):
         self.students = []
