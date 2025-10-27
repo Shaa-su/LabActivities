@@ -1,5 +1,6 @@
 
 #+++++MODEL+++++
+#dito galing yung mga data pang store and then mag mga logic dinnn
 class Student:
     def __init__(self, student_id, name, grade):
         self.student_id = student_id
@@ -12,7 +13,8 @@ class Student:
     def __str__(self):
         return f"Student ID: {self.student_id}, Name: {self.name}, Grade: {self.grade}"
 
-# VIEW (Create second: handles UI and display)
+#+++++VIEW+++++
+# dito makikita ang display or ui ng activity 
 def show_menu():
     print("\n+++++ Student Management System +++++")
     print("1. Add Student")
