@@ -15,7 +15,7 @@ def clean_text(text):
     return text
 
 # ++++ analyzer ++++
-# from text_analyzer.cleaner import clean_text #ginamit dito yung sa cleaner.py para walang caps using import
+ #ginamit dito yung sa cleaner.py para walang caps using import
 
 def analyze_text(text):
 
@@ -41,7 +41,7 @@ def analyze_text(text):
     }
 
 # ++++ stats ++++
-# from text_analyzer.cleaner import clean_text #ginamit dito yung sa cleaner.py para walang caps using import
+ #same dito ginamit yung sa cleaner.py para walang caps using import
 
 def word_frequency(text):
     cleaned = clean_text(text)
@@ -56,9 +56,6 @@ def word_frequency(text):
 # ++++ main ++++
 # dito dapata mag run whcih is yung main
 
-# from text_analyzer.analyzer import analyze_text
-# from text_analyzer.stats import word_frequency
-
 # pang input lang
 sentence = input("Enter a sentence: ")
 
@@ -67,7 +64,7 @@ result = analyze_text(sentence)
 freq = word_frequency(sentence)
 
 # Display with borders
-border = "+" * 30  # Simple border using '+'
+border = "+" * 30  
 print(f"\n{border}")
 print("Analysis Results:")
 print(f"Total Words: {result['total_words']}")
