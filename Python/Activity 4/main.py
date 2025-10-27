@@ -26,7 +26,7 @@ def main():
             controller.delete_student()
         elif choice == "5":
             # 5 naman ay pang exit lang kagaya ng sabi ko nung una
-            view.show_mesage("Exiting program. Byee byeee")
+            view.show_message("Exiting program. Byee byeee")
             break
         else:
             # pang sapo
