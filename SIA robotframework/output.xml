@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-03T21:21:57.865047" rpa="false" schemaversion="5">
+<suite id="s1" name="01 Sample" source="D:\Projects\own\LabActivities\SIA robotframework\01 sample.robot">
+<test id="s1-t1" name="Navigate to Google Homepage" line="6">
+<kw name="Comment" owner="BuiltIn">
+<arg>This is a Comment</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" start="2025-11-03T21:21:58.071648" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-03T21:21:58.071648" level="INFO">Opening browser 'chrome' to base url 'https://google.com'.</msg>
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-03T21:21:58.071648" elapsed="2.650566"/>
+</kw>
+<status status="PASS" start="2025-11-03T21:21:58.070650" elapsed="2.652564"/>
+</test>
+<status status="PASS" start="2025-11-03T21:21:57.866911" elapsed="2.856303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="01 Sample" id="s1" pass="1" fail="0" skip="0">01 Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
