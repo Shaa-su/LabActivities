@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-08T20:33:07.540175" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge 3" source="D:\Projects\own\LabActivities\SIA robotframework\Challenge 3\challenge_3.robot">
+<test id="s1-t1" name="Attempt Login Form Entry" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-08T20:33:07.768603" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${BASE_URL}${LOGIN_PATH}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-08T20:33:07.768603" elapsed="5.321816"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-08T20:33:13.091417" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-08T20:33:13.091417" elapsed="0.121033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-08T20:33:13.213449" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-08T20:33:13.212450" elapsed="0.135922"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-08T20:33:13.349370" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-08T20:33:13.348372" elapsed="0.721309"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-08T20:33:14.070680" elapsed="2.128917"/>
+</kw>
+<status status="PASS" start="2025-11-08T20:33:07.767559" elapsed="8.433038"/>
+</test>
+<status status="PASS" start="2025-11-08T20:33:07.542178" elapsed="8.658419"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Challenge 3" id="s1" pass="1" fail="0" skip="0">Challenge 3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
