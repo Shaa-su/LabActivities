@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-08T22:04:40.668807" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge 5" source="D:\Projects\own\LabActivities\SIA robotframework\Challenge 5\challenge_5.robot">
+<test id="s1-t1" name="Successful Login Using Gherkin" line="5">
+<kw name="Given I am on the login Page" owner="login_resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-08T22:04:40.888831" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${BASE_URL}${LOGIN_PATH}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-08T22:04:40.887830" elapsed="5.203265"/>
+</kw>
+<status status="PASS" start="2025-11-08T22:04:40.887830" elapsed="5.204266"/>
+</kw>
+<kw name="When I submit credentials" owner="login_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-08T22:04:46.093097" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-08T22:04:46.092096" elapsed="0.100962"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-08T22:04:46.194057" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-08T22:04:46.193058" elapsed="0.084373"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-08T22:04:46.277431" level="INFO">Clicking element 'css:button[type='submit']'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-08T22:04:46.277431" elapsed="0.725334"/>
+</kw>
+<arg>tomsmith</arg>
+<arg>SuperSecretPassword!</arg>
+<status status="PASS" start="2025-11-08T22:04:46.092096" elapsed="0.910669"/>
+</kw>
+<kw name="Then I should see the secure area" owner="login_resources">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-08T22:04:47.018797" level="INFO">Current page contains text 'You logged into a secure area!'.</msg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-08T22:04:47.003763" elapsed="0.015034"/>
+</kw>
+<status status="PASS" start="2025-11-08T22:04:47.002765" elapsed="0.016032"/>
+</kw>
+<kw name="And I close the browser" owner="login_resources">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-08T22:04:47.019797" elapsed="2.136218"/>
+</kw>
+<status status="PASS" start="2025-11-08T22:04:47.018797" elapsed="2.137218"/>
+</kw>
+<status status="PASS" start="2025-11-08T22:04:40.886830" elapsed="8.269185"/>
+</test>
+<status status="PASS" start="2025-11-08T22:04:40.670804" elapsed="8.486301"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Challenge 5" id="s1" pass="1" fail="0" skip="0">Challenge 5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
