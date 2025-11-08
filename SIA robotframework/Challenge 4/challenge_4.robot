@@ -12,7 +12,7 @@ Library    SeleniumLibrary
 *** Test Cases ***
 Validate Successful Login
     Perform Login    tomsmith    SuperSecretPassword!
-    Page Should Contain    You logged in to the secure area!
+    Page Should Contain    You logged into a secure area!
     [Teardown]    Close Browser
 
 *** Keywords ***
