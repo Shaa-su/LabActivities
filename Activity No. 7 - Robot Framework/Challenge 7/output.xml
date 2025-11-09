@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-09T18:32:41.341495" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge 7" source="D:\Projects\own\LabActivities\Activity No. 7 - Robot Framework\Challenge 7\challenge_7.robot">
+<test id="s1-t1" name="Interact With Dropdown" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:32:41.536266" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/dropdown'.</msg>
+<arg>${BASE_URL}/dropdown</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-09T18:32:41.536266" elapsed="4.684779"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:32:46.221045" level="INFO">Selecting options from selection list 'id:dropdown' by value 2.</msg>
+<arg>id:dropdown</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-11-09T18:32:46.221045" elapsed="0.057936"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:32:46.278981" level="INFO">Verifying list 'id:dropdown' has option [ Option 2 ] selected.</msg>
+<msg time="2025-11-09T18:32:46.287417" level="INFO">Current page contains list 'id:dropdown'.</msg>
+<arg>id:dropdown</arg>
+<arg>Option 2</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2025-11-09T18:32:46.278981" elapsed="0.058207"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:32:46.338188" level="INFO">Selecting options from selection list 'id:dropdown' by label Option 1.</msg>
+<arg>id:dropdown</arg>
+<arg>Option 1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-11-09T18:32:46.337188" elapsed="0.062106"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:32:46.399294" level="INFO">Verifying list 'id:dropdown' has option [ Option 1 ] selected.</msg>
+<msg time="2025-11-09T18:32:46.407301" level="INFO">Current page contains list 'id:dropdown'.</msg>
+<arg>id:dropdown</arg>
+<arg>Option 1</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2025-11-09T18:32:46.399294" elapsed="0.049709"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-09T18:32:46.449003" elapsed="2.115749"/>
+</kw>
+<status status="PASS" start="2025-11-09T18:32:41.535266" elapsed="7.029486"/>
+</test>
+<status status="PASS" start="2025-11-09T18:32:41.342496" elapsed="7.223262"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Challenge 7" id="s1" pass="1" fail="0" skip="0">Challenge 7</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
