@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-09T18:38:17.562325" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge 8" source="D:\Projects\own\LabActivities\Activity No. 7 - Robot Framework\Challenge 8\challenge_8.robot">
+<test id="s1-t1" name="Handle Dynamic Load" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:38:17.755252" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/dynamic_loading/1'.</msg>
+<arg>${BASE_URL}/dynamic_loading/1</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-09T18:38:17.755252" elapsed="4.799831"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:38:22.556093" level="INFO">Clicking element 'css:#start button'.</msg>
+<arg>${START_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T18:38:22.555083" elapsed="0.054319"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FINISH_TEXT}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-09T18:38:22.610402" elapsed="5.200081"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:38:27.819508" level="INFO">Current page contains text 'Hello World!'.</msg>
+<arg>Hello World!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-09T18:38:27.811484" elapsed="0.009026"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-09T18:38:27.820510" elapsed="2.127881"/>
+</kw>
+<status status="PASS" start="2025-11-09T18:38:17.754254" elapsed="12.194137"/>
+</test>
+<status status="PASS" start="2025-11-09T18:38:17.564328" elapsed="12.385067"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Challenge 8" id="s1" pass="1" fail="0" skip="0">Challenge 8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
