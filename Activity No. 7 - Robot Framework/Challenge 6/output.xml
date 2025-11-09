@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-09T18:20:09.164010" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge 6" source="D:\Projects\own\LabActivities\Activity No. 7 - Robot Framework\Challenge 6\challenge_6.robot">
+<test id="s1-t1" name="Validate Checkbox States" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:09.358931" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
+<arg>${BASE_URL}/checkboxes</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-09T18:20:09.357932" elapsed="4.823374"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:14.182306" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[1]' is not selected.</msg>
+<arg>xpath://form[@id='checkboxes']/input[1]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.182306" elapsed="0.025544"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:14.207850" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[2]' is selected.</msg>
+<arg>xpath://form[@id='checkboxes']/input[2]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.207850" elapsed="0.019753"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:14.227603" level="INFO">Selecting checkbox 'xpath://form[@id='checkboxes']/input[1]'.</msg>
+<arg>xpath://form[@id='checkboxes']/input[1]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.227603" elapsed="0.065383"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:14.292986" level="INFO">Unselecting checkbox 'xpath://form[@id='checkboxes']/input[2]'.</msg>
+<arg>xpath://form[@id='checkboxes']/input[2]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.292986" elapsed="0.055045"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:14.348031" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[1]' is selected.</msg>
+<arg>xpath://form[@id='checkboxes']/input[1]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.348031" elapsed="0.016083"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:20:14.365620" level="INFO">Verifying checkbox 'xpath://form[@id='checkboxes']/input[2]' is not selected.</msg>
+<arg>xpath://form[@id='checkboxes']/input[2]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.365620" elapsed="0.017602"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-09T18:20:14.383222" elapsed="2.119251"/>
+</kw>
+<status status="PASS" start="2025-11-09T18:20:09.357932" elapsed="7.144541"/>
+</test>
+<status status="PASS" start="2025-11-09T18:20:09.165516" elapsed="7.337959"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Challenge 6" id="s1" pass="1" fail="0" skip="0">Challenge 6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
