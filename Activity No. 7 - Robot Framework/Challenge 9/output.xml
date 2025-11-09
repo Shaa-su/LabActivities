@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.6 on win32)" generated="2025-11-09T18:48:07.306486" rpa="false" schemaversion="5">
+<suite id="s1" name="Challenge 9" source="D:\Projects\own\LabActivities\Activity No. 7 - Robot Framework\Challenge 9\challenge_9.robot">
+<test id="s1-t1" name="Validate Alert Text and Actions" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:07.505833" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/javascript_alerts'.</msg>
+<arg>${BASE_URL}/javascript_alerts</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-09T18:48:07.504324" elapsed="4.986347"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.491672" level="INFO">Clicking element 'xpath://button[@onclick='jsAlert()']'.</msg>
+<arg>${ALERT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.490671" elapsed="0.056772"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.548442" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>I am a JS Alert</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.547443" elapsed="0.003998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.552444" level="INFO">Clicking element 'xpath://button[@onclick='jsConfirm()']'.</msg>
+<arg>${CONFIRM_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.552444" elapsed="0.049797"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.602241" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>DISMISS</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.602241" elapsed="0.003502"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.617869" level="INFO">Current page contains text 'You clicked: Cancel'.</msg>
+<arg>You clicked: Cancel</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.606750" elapsed="0.011119"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.618870" level="INFO">Clicking element 'xpath://button[@onclick='jsConfirm()']'.</msg>
+<arg>${CONFIRM_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.618870" elapsed="0.041786"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.661658" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.661658" elapsed="0.002999"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-11-09T18:48:12.675674" level="INFO">Current page contains text 'You clicked: Ok'.</msg>
+<arg>You clicked: Ok</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.665659" elapsed="0.010015"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-09T18:48:12.675674" elapsed="2.131547"/>
+</kw>
+<status status="PASS" start="2025-11-09T18:48:07.504324" elapsed="7.302897"/>
+</test>
+<status status="PASS" start="2025-11-09T18:48:07.307478" elapsed="7.499743"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Challenge 9" id="s1" pass="1" fail="0" skip="0">Challenge 9</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
